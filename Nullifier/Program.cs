@@ -9,6 +9,7 @@ namespace Nullifier
     {
         static void Main()
         {
+            List<KDA> list1 = new List<KDA>();
             List<KDA> list = new List<KDA>();
             KDA invoker = new KDA("invoker", 10, 5, 3);
             KDA teamlar = new KDA("templar", 5, 0, 7);
@@ -27,8 +28,8 @@ namespace Nullifier
             do
             {
                 keyInfo = Console.ReadKey();
-                fileManager.LoadFile(filePath);
-                for (int i = 0; i < list.Count; i++)
+                list1 = fileManager.LoadFile(filePath, list);
+                for (int i = 0; i < list1.Count; i++)
                 {
                     Console.WriteLine(list[i].namePerson);
                     Console.WriteLine(list[i].kill);

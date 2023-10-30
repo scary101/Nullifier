@@ -1,10 +1,14 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using System.Xml.Serialization;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Nullifier
 {
@@ -33,8 +37,6 @@ namespace Nullifier
         {
             string json = JsonConvert.SerializeObject(list);
             string extension = Path.GetExtension(path);
-            path = path.Replace(extension, "");
-            File.WriteAllText(path, json);
         }
         private void SerXml(string path, List<KDA> list)
         {
@@ -46,8 +48,20 @@ namespace Nullifier
         }
         private void SerTxt(string path, List<KDA> list)
         {
-            string a = list[0].namePerson;
-            string b = list[1].namePerson;
+            StreamWriter sw = new StreamWriter(path);
+            foreach (KDA item in list)
+            {
+                sw.Write(item.namePerson);
+                sw.WriteLine(",");
+                sw.Write(item.kill.ToString());
+                sw.WriteLine(",");
+                sw.Write( item.death.ToString());
+                sw.WriteLine(",");
+                sw.Write( item.assist.ToString());
+                sw.WriteLine(",");
+            }
+            sw.Close();
+
         }
         public void SaveFile(List<KDA> kda , string path)
         {
@@ -80,18 +94,29 @@ namespace Nullifier
                 return list = (List<KDA>)xml.Deserialize(fs);
             }
         }
-        public void LoadFile( string path)
+        private string DasTxt(string path)
+        {
+            string txt = File.ReadAllText(path);
+            return txt;
+        }
+        public List<KDA> LoadFile( string path, List<KDA> list1)
         {
             string extension = Path.GetExtension(path);
+            List<KDA> list = new List<KDA>();
             switch (extension)
             {
                 case ".xml":
-                    DesXml(path);
+                    list = DesXml(path);
                     break;
-                case ".json":
-                    DesJson(path);
+                case ".json": 
+                    list =DesJson(path);
+                    break;
+                case ".txt":
+                    string txt = DasTxt(path);
+                    Console.WriteLine(txt);
                     break;
             }
+            return list;
         }
 
     }
