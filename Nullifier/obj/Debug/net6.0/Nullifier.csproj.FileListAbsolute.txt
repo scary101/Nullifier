@@ -1,0 +1,17 @@
+C:\Users\user\source\repos\Nullifier\Nullifier\bin\Debug\net6.0\Nullifier.exe
+C:\Users\user\source\repos\Nullifier\Nullifier\bin\Debug\net6.0\Nullifier.deps.json
+C:\Users\user\source\repos\Nullifier\Nullifier\bin\Debug\net6.0\Nullifier.runtimeconfig.json
+C:\Users\user\source\repos\Nullifier\Nullifier\bin\Debug\net6.0\Nullifier.dll
+C:\Users\user\source\repos\Nullifier\Nullifier\bin\Debug\net6.0\Nullifier.pdb
+C:\Users\user\source\repos\Nullifier\Nullifier\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\user\source\repos\Nullifier\Nullifier\obj\Debug\net6.0\Nullifier.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\Nullifier\Nullifier\obj\Debug\net6.0\Nullifier.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\Nullifier\Nullifier\obj\Debug\net6.0\Nullifier.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\Nullifier\Nullifier\obj\Debug\net6.0\Nullifier.AssemblyInfo.cs
+C:\Users\user\source\repos\Nullifier\Nullifier\obj\Debug\net6.0\Nullifier.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Nullifier\Nullifier\obj\Debug\net6.0\Nullifier.csproj.CopyComplete
+C:\Users\user\source\repos\Nullifier\Nullifier\obj\Debug\net6.0\Nullifier.dll
+C:\Users\user\source\repos\Nullifier\Nullifier\obj\Debug\net6.0\refint\Nullifier.dll
+C:\Users\user\source\repos\Nullifier\Nullifier\obj\Debug\net6.0\Nullifier.pdb
+C:\Users\user\source\repos\Nullifier\Nullifier\obj\Debug\net6.0\Nullifier.genruntimeconfig.cache
+C:\Users\user\source\repos\Nullifier\Nullifier\obj\Debug\net6.0\ref\Nullifier.dll

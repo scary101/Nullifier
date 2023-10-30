@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "E5ueOJBjoDi/3W0wiSPZjzNitlek3EGuGZB1eSqHddaH88B7Aw7lRDrRnasahScyTL+v+oRQrr5cPyAdISrJ4Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\Nullifier\\Nullifier\\Nullifier.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
